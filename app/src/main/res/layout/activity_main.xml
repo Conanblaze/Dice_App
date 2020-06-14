@@ -83,7 +83,7 @@
         android:layout_marginTop="0dp"
         android:drawableBottom="@color/colorAccent"
         android:inputType="textPersonName"
-        android:text="Created By Deepak Soni"
+        android:text="CREATOR"
         android:textColor="#FFFFFF"
         android:textSize="10dp" />
 

@@ -1,11 +1,12 @@
 package Deepakroda7.com;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         one=findViewById(R.id.dice1);
         two=findViewById(R.id.dice2);
         three=findViewById(R.id.dice3);
+
+        TextView Text_creator;
+        Text_creator=findViewById(R.id.editText2);
 
         one.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("3-DICE");
                 Intent dice3=new Intent(getApplicationContext(),dice_3.class);
                 startActivity(dice3);
+            }
+        });
+
+        Text_creator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent creator= new Intent(getApplicationContext(),creator_Activity.class);
+                startActivity(creator);
             }
         });
     }

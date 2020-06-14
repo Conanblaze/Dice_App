@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dice_3"></activity>
+        <activity android:name=".creator_Activity"></activity>
+        <activity android:name=".dice_3" />
         <activity android:name=".dice_2" />
         <activity android:name=".dice_1" />
         <activity android:name=".MainActivity">

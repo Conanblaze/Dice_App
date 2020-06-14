@@ -1,12 +1,14 @@
 package Deepakroda7.com;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
@@ -42,6 +44,15 @@ public class dice_2 extends AppCompatActivity {
                 int genrated2=randomgenerator.nextInt(6);
                 right_dice.setImageResource(arr[genrated2]);
 
+            }
+        });
+
+        TextView creator_text=findViewById(R.id.editText2);
+        creator_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent creator=new Intent(getApplicationContext(),creator_Activity.class);
+                startActivity(creator);
             }
         });
     }

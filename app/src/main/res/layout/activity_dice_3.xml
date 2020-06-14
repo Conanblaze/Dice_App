@@ -93,7 +93,7 @@
         android:foregroundGravity="bottom"
         android:gravity="bottom"
         android:inputType="textPersonName"
-        android:text="Created By Deepak Soni"
+        android:text="CREATOR"
         android:textColor="#ffffff"
         android:textSize="10dp" />
 
